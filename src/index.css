@@ -1,0 +1,42 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+#root {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  @apply bg-[#F8F9FA];
+}
+
+.register__input {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.5em;
+}
+
+.register__input--all {
+  grid-template-columns: 1fr !important;
+}
+
+.register__input p {
+  color: gray;
+  font-weight: 600;
+  font-size: 0.9rem;
+}
+
+.register__input input {
+  width: 100%;
+  outline: none;
+  padding: 5px 10px;
+  border-radius: 8px;
+  border:2px solid rgba(228, 227, 227, 0.897);
+}
