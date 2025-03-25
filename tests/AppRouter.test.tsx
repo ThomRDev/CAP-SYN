@@ -7,7 +7,6 @@ import { AppRouter } from "../src/AppRouter";
 import { useAuth } from "../src/features/auth/hooks/useAuth";
 import { AUTH_STATUS } from "../src/store/auth/authSlice";
 
-// 1️⃣ Mockeamos el hook de autenticación
 vi.mock("../src/features/auth/hooks/useAuth");
 
 const mockUseAuth = useAuth as Mock;
