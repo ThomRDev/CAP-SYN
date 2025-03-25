@@ -11,7 +11,7 @@ createRoot(document.getElementById("root")!).render(
   <>
     <Provider store={store}>
       <UIProvider>
-        <BrowserRouter>
+        <BrowserRouter basename="/CAP-SYN">
           <AppRouter />
         </BrowserRouter>
       </UIProvider>
